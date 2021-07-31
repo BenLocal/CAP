@@ -10,5 +10,11 @@ namespace Sample.ConsoleApp
         {
             Console.WriteLine(date);
         }
+
+        [CapSubscribe("sample.console.test")]
+        public void Test(string date)
+        {
+            Console.WriteLine(date);
+        }
     }
 }
